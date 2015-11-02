@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="motionAuthentication_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="135" alignment="left" text="Step 1: hold your iPhone" textAlignment="center" numberOfLines="2" id="31T-SM-cv2"/>
+                        <button width="1" alignment="left" title="next" id="otG-yj-W72">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                            <connections>
+                                <segue destination="jtd-PR-B00" kind="push" id="Nzw-T6-q1f"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="IF9-QK-6oB">
+            <objects>
+                <controller hidesWhenLoading="NO" id="jtd-PR-B00" customClass="InterfaceController" customModule="motionAuthentication_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="58" alignment="left" text="Message Label" textAlignment="center" numberOfLines="3" id="y25-L2-De7"/>
+                        <imageView width="1" height="100" alignment="left" image="stick_arms_out.png" contentMode="scaleAspectFit" id="DXo-b0-75N"/>
+                        <button width="1" alignment="left" title="READY...GO" id="0Mh-Z1-Wva">
+                            <color key="titleColor" red="0.23921568630000001" green="0.82352941180000006" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="readyGoButtonPressed" destination="jtd-PR-B00" id="Gca-0Z-kEF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="y25-L2-De7" id="3EC-tA-6FZ"/>
+                        <outlet property="readyGoButton" destination="0Mh-Z1-Wva" id="dTJ-0V-sZI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="473" y="344.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +63,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="motionAuthentication_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

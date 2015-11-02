@@ -22,6 +22,7 @@
 		E882F0D41BD72D440044761C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882F0D31BD72D440044761C /* ExtensionDelegate.swift */; };
 		E882F0D61BD72D440044761C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882F0D51BD72D440044761C /* NotificationController.swift */; };
 		E882F0D81BD72D440044761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E882F0D71BD72D440044761C /* Assets.xcassets */; };
+		E882F0F41BD742E20044761C /* stick_arms_out.png in Resources */ = {isa = PBXBuildFile; fileRef = E882F0F31BD742E20044761C /* stick_arms_out.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		E882F0D51BD72D440044761C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		E882F0D71BD72D440044761C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E882F0D91BD72D440044761C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E882F0F31BD742E20044761C /* stick_arms_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stick_arms_out.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +144,12 @@
 		E882F08A1BD72D430044761C = {
 			isa = PBXGroup;
 			children = (
+				E882F0CE1BD72D440044761C /* motionAuthentication WatchKit Extension */,
+				E882F0BF1BD72D440044761C /* motionAuthentication WatchKit App */,
 				E882F0951BD72D430044761C /* motionAuthentication */,
+				E882F0941BD72D430044761C /* Products */,
 				E882F0AA1BD72D440044761C /* motionAuthenticationTests */,
 				E882F0B51BD72D440044761C /* motionAuthenticationUITests */,
-				E882F0BF1BD72D440044761C /* motionAuthentication WatchKit App */,
-				E882F0CE1BD72D440044761C /* motionAuthentication WatchKit Extension */,
-				E882F0941BD72D430044761C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,11 +200,12 @@
 			isa = PBXGroup;
 			children = (
 				E882F0C01BD72D440044761C /* Interface.storyboard */,
+				E882F0F31BD742E20044761C /* stick_arms_out.png */,
 				E882F0C31BD72D440044761C /* Assets.xcassets */,
 				E882F0C51BD72D440044761C /* Info.plist */,
 			);
 			path = "motionAuthentication WatchKit App";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		E882F0CE1BD72D440044761C /* motionAuthentication WatchKit Extension */ = {
 			isa = PBXGroup;
@@ -215,7 +218,7 @@
 				E882F0CF1BD72D440044761C /* Supporting Files */,
 			);
 			path = "motionAuthentication WatchKit Extension";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		E882F0CF1BD72D440044761C /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -401,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E882F0F41BD742E20044761C /* stick_arms_out.png in Resources */,
 				E882F0C41BD72D440044761C /* Assets.xcassets in Resources */,
 				E882F0C21BD72D440044761C /* Interface.storyboard in Resources */,
 			);
